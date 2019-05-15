@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -10,29 +17,122 @@
     <meta charset="UTF-8">
     <title>Triangle Calculator</title>
 </head>
+
 <body>
     <header>
         <h1>Triangle Calculator</h1>
     </header>
     <section>
-        <h3>Angulos</h3>
-        <section>
-            <div class="row">
-                A=
-                <div class="input-field inline">
-                    <input id="Valor1A" type="number">
-                    <label for="Valor1A"> Valor</label>
-                </div>
-                <div class="input-field inline">
-                    <input id="Valor2A" type="text">
-                    <label for="Valor2A">Unidad</label>
-                </div>
+
+        <div class="dropdown">
+            Calculadora:   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Seleccione Triángulo
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Rectángulo</a>
+                <a class="dropdown-item" href="#">Isocéles</a>
+                <a class="dropdown-item" href="#">Equilátero</a>
             </div>
-            </div>
-        </section>
+
+        </div>
     </section>
+
+
     <section>
-        <h3>Lados</h3>
-    </section>
+        <table class="table table-borderless">
+            <thead>
+            <tr>
+                <th scope="col">Angulo:</th>
+                <th scope="col">Lados:</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+
+                <td>
+                    <div class="A">
+                        A=
+                        <div class="input-field inline">
+                            <input id="Valor1A" type="number">
+                            <label for="Valor1A"> Valor</label>
+                        </div>
+                        <div class="input-field inline">
+                            <input id="Valor2A" type="text">
+                            <label for="Valor2A">Unidad</label>
+                        </div>
+                </td>
+                <td>
+                    <div class="a">
+                        a=
+                        <div class="input-field inline">
+                            <input id="Valor1a" type="number">
+                            <label for="Valor1a"> Valor</label>
+                        </div>
+                        <div class="input-field inline">
+                            <input id="Valor2a" type="text">
+                            <label for="Valor2a">Unidad</label>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <div class="B">
+                        B=
+                        <div class="input-field inline">
+                            <input id="Valor1B" type="number">
+                            <label for="Valor1B"> Valor</label>
+                        </div>
+                        <div class="input-field inline">
+                            <input id="Valor2B" type="text">
+                            <label for="Valor2B">Unidad</label>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="b">
+                        b=
+                        <div class="input-field inline">
+                            <input id="Valor1b" type="number">
+                            <label for="Valor1b"> Valor</label>
+                        </div>
+                        <div class="input-field inline">
+                            <input id="Valor2b" type="text">
+                            <label for="Valor2b">Unidad</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="C">
+                        C=
+                        <div class="input-field inline">
+                            <input id="Valor1C" type="number">
+                            <label for="Valor1C"> Valor</label>
+                        </div>
+                        <div class="input-field inline">
+                            <input id="Valor2C" type="text">
+                            <label for="Valor2C">Unidad</label>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="c">
+                        c=
+                        <div class="input-field inline">
+                            <input id="Valor1c" type="number">
+                            <label for="Valor1c"> Valor</label>
+                        </div>
+                        <div class="input-field inline">
+                            <input id="Valor2c" type="text">
+                            <label for="Valor2c">Unidad</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 </body>
 </html>

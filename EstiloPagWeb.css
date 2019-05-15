@@ -1,0 +1,19 @@
+
+#Teoria {
+    position: absolute;
+    right: 20%;
+}
+
+h1{
+    text-align: center;
+    font-style:  italic;
+    text-decoration: underline;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.cabecera{
+    text-align: center;
+}

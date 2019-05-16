@@ -1,16 +1,36 @@
 
-#Teoria {
-    position: absolute;
-    right: 20%;
+#Teo {
+    position: relative;
+    bottom: -20px;
+    right: -960px;
+}
+
+.btn-secondary{
+    background-color: darkblue;
+}
+.btn-info{
+    background-color: darkmagenta;
+}
+
+#Auto{
+    position: relative;
+    bottom: -30px;
+    right: -900px;
 }
 
 h1{
+    border-radius: 15px;
+    background-color: darksalmon;
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 1px solid black;
     text-align: center;
     font-style:  italic;
-    text-decoration: underline;
 }
 
-body{
+
+body {
     background-color: antiquewhite;
 }
 .cabecera{

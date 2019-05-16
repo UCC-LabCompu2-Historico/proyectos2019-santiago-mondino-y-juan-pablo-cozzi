@@ -1,38 +1,50 @@
 
-#Teo {
-    position: relative;
-    bottom: -20px;
-    right: -960px;
-}
-
-.btn-secondary{
-    background-color: darkblue;
-}
-.btn-info{
-    background-color: darkmagenta;
-}
-
-#Auto{
-    position: relative;
-    bottom: -30px;
-    right: -900px;
+body {
+    background-color: antiquewhite;
 }
 
 h1{
     border-radius: 15px;
-    background-color: darksalmon;
     margin-top: 20px;
     margin-left: 400px;
     margin-right: 400px;
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     font-style:  italic;
+    font-weight: bold;
+}
+
+#Teoria {
+    position: absolute;
+    bottom: 450px;
+    right: 90px;
+}
+
+#AutoEv{
+    position: absolute;
+    bottom: 400px;
+    right: 90px;
+}
+
+#Triangulo{
+    background-color: darkblue;
+}
+
+#Calcular{
+    position: relative;
+    top: 350px;
+    right: -960px;
+    background-color: rgba(119,201,37,0.75);
+}
+#Reiniciar{
+    position: relative;
+    top: 312px;
+    right: -835px;
+    background-color: rgba(189,0,10,0.75);
 }
 
 
-body {
-    background-color: antiquewhite;
-}
+
 .cabecera{
     text-align: start;
 }

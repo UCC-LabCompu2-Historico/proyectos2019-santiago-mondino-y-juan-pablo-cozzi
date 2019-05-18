@@ -16,13 +16,13 @@ h1{
 
 #Teoria {
     position: absolute;
-    bottom: 450px;
+    bottom: 410px;
     right: 90px;
 }
 
 #AutoEv{
     position: absolute;
-    bottom: 400px;
+    bottom: 365px;
     right: 90px;
 }
 
@@ -43,6 +43,11 @@ h1{
     background-color: rgba(189,0,10,0.75);
 }
 
+.VolverMenu{
+    position: absolute;
+    right: 90px;
+    bottom: 30px;
+}
 
 
 .cabecera{

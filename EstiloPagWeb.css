@@ -1,9 +1,13 @@
 
+/*formato de todas las TAG's*/
+
 body {
-    background-color: antiquewhite;
+    background-image: url("Imagenes/fondo.jpg");
+    background-repeat: repeat;
 }
 
 h1{
+    font-size: 13mm;
     border-radius: 15px;
     margin-top: 20px;
     margin-left: 400px;
@@ -12,18 +16,40 @@ h1{
     text-align: center;
     font-style:  italic;
     font-weight: bold;
+    color: brown;
+}
+
+h2{
+    padding: 10px;
+    font-size: 9mm;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h6{
+    font-style: italic;
+    color: olivedrab;
+}
+/*formato de todas las ID's*/
+
+#cartas{
+    max-width: 800px;
 }
 
 #Teoria {
+    background-color: rgba(255,167,0,0.62);
     position: absolute;
-    bottom: 410px;
+    bottom: 450px;
     right: 90px;
+    color: black;
 }
 
 #AutoEv{
+    background-color: rgba(255,167,0,0.62);
     position: absolute;
-    bottom: 365px;
+    bottom: 405px;
     right: 90px;
+    color: black;
 }
 
 #Triangulo{
@@ -43,13 +69,32 @@ h1{
     background-color: rgba(189,0,10,0.75);
 }
 
+#Trigo{
+    position: absolute;
+    bottom: 1450px;
+    rigt: 40px;
+}
+
+/*formato de todas las clases*/
+
+.separacion{
+    padding: 25px;
+}
+
 .VolverMenu{
     position: absolute;
     right: 90px;
-    bottom: 30px;
+    bottom: -2905px;
 }
-
 
 .cabecera{
     text-align: start;
+    font-size: 9mm;
+    font-style: italic;
+}
+
+.card-title{
+    text-decoration: underline;
+    color: steelblue;
+
 }

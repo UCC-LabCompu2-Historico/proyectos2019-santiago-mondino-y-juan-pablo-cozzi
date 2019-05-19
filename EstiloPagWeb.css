@@ -1,21 +1,25 @@
 
+
 /*formato de todas las TAG's*/
 
 body {
     background-image: url("Imagenes/fondo.jpg");
     background-repeat: repeat;
 }
+.card{
+    border: transparent;
+    background-color: transparent;
+}
 
-h1{
-    font-size: 13mm;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-left: 400px;
-    margin-right: 400px;
-    border: 2px solid black;
+
+header{
+    margin-bottom: 100px;
+    text-decoration: underline;
+    font-size: calc(14px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
     font-style:  italic;
     font-weight: bold;
+    font-size: 15mm;
     color: brown;
 }
 
@@ -57,34 +61,52 @@ h6{
 }
 
 #Calcular{
-    position: relative;
-    top: 350px;
-    right: -960px;
-    background-color: rgba(119,201,37,0.75);
+    position: absolute;
+    bottom: 90px;
+    right: 200px;
+    background-color: rgba(119,201,37,0.75) ;
 }
+
+#CalcularNew{
+    position: absolute;
+    bottom: 90px;
+    right: 200px;
+    background-color: rgba(119,201,37,0.75);
+
+}
+
 #Reiniciar{
-    position: relative;
-    top: 312px;
-    right: -835px;
+    position: absolute;
+    bottom: 90px;
+    right: 300px;
     background-color: rgba(189,0,10,0.75);
 }
 
 #Trigo{
     position: absolute;
-    bottom: 1450px;
-    rigt: 40px;
+    bottom: 1900px;
+    padding-right: 20px;
+}
+
+#Terminar{
+    position: absolute;
+    margin-bottom: 50px;
+    right: 50px;
+    bottom: -1200px;
+    background-color: lightseagreen;
+}
+#Reset{
+    position: absolute;
+    margin-bottom: 50px;
+    bottom: -1200px;
+    right: 250px;
+    background-color: #e2553f;
 }
 
 /*formato de todas las clases*/
 
 .separacion{
-    padding: 25px;
-}
-
-.VolverMenu{
-    position: absolute;
-    right: 90px;
-    bottom: -2905px;
+    padding: 20px;
 }
 
 .cabecera{
@@ -96,5 +118,26 @@ h6{
 .card-title{
     text-decoration: underline;
     color: steelblue;
+}
 
+.autobuttons{
+    position: absolute;
+    bottom: -1550px;
+    right: 450px;
+}
+
+.btn-primary{
+    position: fixed;
+    right: 15px;
+    bottom: 3px;
+    background-color: unset;
+    border-color: black;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.preguntas{
+    font-size: 5.5mm;
+    font-style: italic;
 }

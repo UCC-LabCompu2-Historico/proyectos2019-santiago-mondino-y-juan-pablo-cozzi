@@ -10,48 +10,41 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EstiloPagWeb.css">
-    <meta charset="UTF-8">
-    <title>Triangle Calculator</title>
-</head>
 
+    <meta charset="UTF-8">
+    <title>Resultados Calculadora</title>
+</head>
 <body>
+
     <div class="container">
         <header>
-            Calculadora de Triángulos
+            Resultados del Cálculo
         </header>
     </div>
-        <div>
-            <a id="Teoria" class="btn btn-secondary" href="Teoria.html" role="button">Teoria</a>
-        </div>
-        <div>
-            <a id="AutoEv" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Autoevaluacion</a>
-        </div>
+    <div>
+        <a id="Teoria" class="btn btn-secondary" href="Teoria.html" role="button">Teoria</a>
     </div>
-
-            <div>
-                <a id="Calcular" class="btn btn-info" href="Resultados_Calcu.html" role="button">Calcular</a>
-            </div>
-                <a id="Reiniciar" class="btn btn-info" href="index.html" role="button">Reiniciar</a>
-            </div>
-        </div>
+    <div>
+        <a id="AutoEv" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Autoevaluacion</a>
+    </div>
     </div>
 
 
     <div>
-        <table class="table table-responsive table-borderless">
+        <table class="table table-responsive table-borderless" disable>
             <thead>
-                <tr>
-                    <th class="cabecera" scope="col">Ángulos:</th>
-                    <th  class="cabecera" scope="col">Lados:</th>
-                </tr>
+            <tr>
+                <th class="cabecera" scope="col">Ángulos:</th>
+                <th  class="cabecera" scope="col">Lados:</th>
+            </tr>
             </thead>
             <tbody>
             <tr>
                 <td>
                     <div class="A">
                         <div class="input-field inline">
-                          A=  <input id="Valor1A" type="number" placeholder="Valor">
-                              <input id="Valor2A" type="text" placeholder="Unidad">
+                            A=<input id="Valor1A" type="number" placeholder="Valor" disabled>
+                            <input id="Valor2A" type="text" placeholder="Unidad" disabled>
                         </div>
                     </div>
                 </td>
@@ -59,8 +52,8 @@
                     <div class="a">
 
                         <div class="input-field inline">
-                            a=<input id="Valor1a" type="number" placeholder="Valor">
-                              <input id="Valor2a" type="text" placeholder="Unidad">
+                            a=<input id="Valor1a" type="number" placeholder="Valor"disabled>
+                            <input id="Valor2a" type="text" placeholder="Unidad"disabled>
                         </div>
                     </div>
                 </td>
@@ -71,8 +64,8 @@
                     <div class="B">
 
                         <div class="input-field inline">
-                            B=<input id="Valor1B" type="number" placeholder="Valor">
-                              <input id="Valor2B" type="text" placeholder="Unidad">
+                            B=<input id="Valor1B" type="number" placeholder="Valor"disabled>
+                            <input id="Valor2B" type="text" placeholder="Unidad"disabled>
                         </div>
                     </div>
                 </td>
@@ -80,9 +73,9 @@
                     <div class="b">
 
                         <div class="input-field inline">
-                        b=    <input id="Valor1b" type="number" placeholder="Valor">
-                            <input id="Valor2b" type="text" placeholder="Unidad">
-                    </div>
+                            b=    <input id="Valor1b" type="number" placeholder="Valor"disabled>
+                            <input id="Valor2b" type="text" placeholder="Unidad"disabled>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -90,23 +83,29 @@
                 <td>
                     <div class="C">
                         <div class="input-field inline">
-                            C=<input id="Valor1C" type="number" placeholder="Valor">
-                              <input id="Valor2C" type="text" placeholder="Unidad">
-                    </div>
+                            C=<input id="Valor1C" type="number" placeholder="Valor"disabled>
+                            <input id="Valor2C" type="text" placeholder="Unidad"disabled>
+                        </div>
                     </div>
                 </td>
                 <td>
                     <div class="c">
 
                         <div class="input-field inline">
-                        c=    <input id="Valor1c" type="number" placeholder="Valor">
-                              <input id="Valor2c" type="text" placeholder="Unidad">
-                    </div>
+                            c=    <input id="Valor1c" type="number" placeholder="Valor"disabled>
+                            <input id="Valor2c" type="text" placeholder="Unidad"disabled>
+                        </div>
                     </div>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
+
+
+    <div>
+        <a id="CalcularNew" class="btn btn-info" href="index.html" role="button">Calcular Nuevamente</a>
+    </div>
+
 </body>
 </html>

@@ -92,13 +92,13 @@ h6{
     position: absolute;
     margin-bottom: 50px;
     right: 50px;
-    bottom: -1200px;
+    bottom: -1400px;
     background-color: lightseagreen;
 }
 #Reset{
     position: absolute;
     margin-bottom: 50px;
-    bottom: -1200px;
+    bottom: -1400px;
     right: 250px;
     background-color: #e2553f;
 }

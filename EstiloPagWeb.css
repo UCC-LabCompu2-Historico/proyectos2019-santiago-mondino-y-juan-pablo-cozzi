@@ -3,7 +3,7 @@
 /*formato de todas las TAG's*/
 
 body {
-    background-image: url("Imagenes/fondo.jpg");
+    background-image: url("Imagenes/floor-tile.png");
     background-repeat: repeat;
 }
 .card{
@@ -91,8 +91,8 @@ h6{
 #Terminar{
     position: absolute;
     margin-bottom: 50px;
-    right: 50px;
-    bottom: -1400px;
+    right: 470px;
+    bottom: -2952px;
     background-color: lightseagreen;
 }
 #Reset{
@@ -126,7 +126,7 @@ h6{
     right: 450px;
 }
 
-.btn-primary{
+.btn-success{
     position: fixed;
     right: 15px;
     bottom: 3px;

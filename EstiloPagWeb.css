@@ -6,7 +6,7 @@ body {
 }
 
 
-header {
+h1 {
     margin-bottom: 100px;
     text-decoration: underline;
     font-size: calc(14px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
@@ -21,6 +21,12 @@ h2 {
     padding: 10px;
     font-size: 9mm;
     font-style: italic;
+    text-decoration: underline;
+}
+
+h4 {
+    font-style: italic;
+    font-size: 5.5mm;
     text-decoration: underline;
 }
 
@@ -54,14 +60,12 @@ h6 {
 }
 
 #Calcular {
-    bottom: 90px;
-    right: 200px;
     background-color: rgba(119, 201, 37, 0.75);
 }
 
 #CalcularNew {
-    bottom: 90px;
-    right: 200px;
+    margin: 15px;
+    margin-top: 25px;
     background-color: rgba(119, 201, 37, 0.75);
 
 }
@@ -88,6 +92,14 @@ h6 {
     background-color: #e2553f;
 }
 
+#myCanvas {
+    margin-bottom: 0px;
+    border: 1px solid black;
+    width: 85%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
 /*formato de todas las clases*/
 
 .separacion {
@@ -106,8 +118,6 @@ h6 {
 }
 
 
-
-
 .btn-success {
     position: fixed;
     right: 15px;
@@ -117,6 +127,7 @@ h6 {
     color: black;
     font-style: italic;
     font-weight: bold;
+    z-index: 5;
 }
 
 .preguntas {
@@ -127,4 +138,8 @@ h6 {
 .card {
     border: transparent;
     background-color: transparent;
+}
+
+.tabla {
+    margin-top: 0px;
 }

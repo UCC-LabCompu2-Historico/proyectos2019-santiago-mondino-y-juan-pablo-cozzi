@@ -25,9 +25,16 @@
 <section>
      <div class="container">
           <header>
-               Calculadora de Triángulos
+               <h1>Calculadora de Triángulos</h1>
           </header>
      </div>
+</section>
+<section>
+     <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent">
+               <li class="breadcrumb-item active" aria-current="page">Menú</li>
+          </ol>
+     </nav>
 </section>
 
 <section>
@@ -55,8 +62,11 @@
                     <td>
                          <div class="A">
                               <div class="input-field inline">
-                                   A=   <input id="Valor1A" type="number" placeholder="Valor">
-                                        <input id="Valor2A" type="text" placeholder="Unidad">
+                                   A= <input id="Valor1A" type="number" placeholder="Valor">
+                                   <select name="opciones unidad">
+                                        <option value="op1">Elija una unidad...</option>
+                                        <option value="op2">°</option>
+                                   </select>
                               </div>
                          </div>
                     </td>
@@ -64,8 +74,13 @@
                          <div class="a">
 
                               <div class="input-field inline">
-                                   a=   <input id="Valor1a" type="number" placeholder="Valor">
-                                        <input id="Valor2a" type="text" placeholder="Unidad">
+                                   a= <input id="Valor1a" type="number" placeholder="Valor">
+                                   <select name="opciones unidad">
+                                        <option value="op1">Elija una unidad...</option>
+                                        <option value="op2">m</option>
+                                        <option value="op3">cm</option>
+                                        <option value="op4">mm</option>
+                                   </select>
                               </div>
                          </div>
                     </td>
@@ -76,8 +91,11 @@
                          <div class="B">
 
                               <div class="input-field inline">
-                                   B=   <input id="Valor1B" type="number" placeholder="Valor">
-                                        <input id="Valor2B" type="text" placeholder="Unidad">
+                                   B= <input id="Valor1B" type="number" placeholder="Valor">
+                                   <select name="opciones unidad">
+                                        <option value="op1">Elija una unidad...</option>
+                                        <option value="op2">°</option>
+                                   </select>
                               </div>
                          </div>
                     </td>
@@ -85,33 +103,49 @@
                          <div class="b">
 
                               <div class="input-field inline">
-                                   b=   <input id="Valor1b" type="number" placeholder="Valor">
-                                        <input id="Valor2b" type="text" placeholder="Unidad">
+                                   b= <input id="Valor1b" type="number" placeholder="Valor">
+                                   <select name="opciones unidad">
+                                        <option value="op1">Elija una unidad...</option>
+                                        <option value="op2">m</option>
+                                        <option value="op3">cm</option>
+                                        <option value="op4">mm</option>
+                                   </select>
                               </div>
                          </div>
-                    </td>
-               </tr>
-               <tr>
-                    <td>
-                         <div class="C">
-                              <div class="input-field inline">
-                                   C=   <input id="Valor1C" type="number" placeholder="Valor">
-                                        <input id="Valor2C" type="text" placeholder="Unidad">
-                              </div>
-                         </div>
-                    </td>
-                    <td>
-                         <div class="c">
+     </div>
+     </td>
+     </tr>
+     <tr>
+          <td>
+               <div class="C">
+                    <div class="input-field inline">
+                         C= <input id="Valor1C" type="number" placeholder="Valor">
+                         <select name="opciones unidad">
+                              <option value="op1">Elija una unidad...</option>
+                              <option value="op2">°</option>
+                         </select>
+                    </div>
+               </div>
+               </div>
+          </td>
+          <td>
+               <div class="c">
 
-                              <div class="input-field inline">
-                                   c=   <input id="Valor1c" type="number" placeholder="Valor">
-                                        <input id="Valor2c" type="text" placeholder="Unidad">
-                              </div>
-                         </div>
-                    </td>
-               </tr>
-               </tbody>
-          </table>
+                    <div class="input-field inline">
+                         c= <input id="Valor1c" type="number" placeholder="Valor">
+                         <select name="opciones unidad">
+                              <option value="op1">Elija una unidad...</option>
+                              <option value="op2">m</option>
+                              <option value="op3">cm</option>
+                              <option value="op4">mm</option>
+                         </select>
+                    </div>
+               </div>
+               </div>
+          </td>
+     </tr>
+     </tbody>
+     </table>
      </div>
 </section>
 

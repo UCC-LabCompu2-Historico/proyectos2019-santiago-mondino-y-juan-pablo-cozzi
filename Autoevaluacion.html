@@ -25,10 +25,18 @@
 <div>
      <section>
           <header>
-               Autoevaluación
+               <h1>Autoevaluación</h1>
           </header>
      </section>
 
+     <section>
+          <nav aria-label="breadcrumb">
+               <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="index.html">Menú</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Autoevaluación</li>
+               </ol>
+          </nav>
+     </section>
 
      <section>
           <div class="float-right">
@@ -379,14 +387,12 @@
      </section>
      <section>
           <div class="col text-center">
-               <div class="boton_terminar">
-                    <button id="Terminar" type="button" class="btn btn-primary" data-toggle="modal"
-                            data-target="#exampleModal">
-                         Terminar
-                    </button>
-                    <a id="Reset" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Reiniciar</a>
+               <button id="Terminar" type="button" class="btn btn-primary" data-toggle="modal"
+                       data-target="#exampleModal">
+                    Terminar
+               </button>
+               <a id="Reset" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Reiniciar</a>
 
-               </div>
 
                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -399,7 +405,7 @@
                                    </button>
                               </div>
                               <div class="modal-body">
-                                   <p>¿Desea enviar sus respuestas?</p>
+                                   <p>¿Desea terminar la autoevalucion y enviar sus respuestas?</p>
                               </div>
                               <div class="modal-footer">
                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar

@@ -23,5 +23,8 @@ Las sugerencias o ideas para mejorar el programa son siempre bienvenidas,
 si a usted le interesa aportar al proyecto con una idea o sugerencia, 
 mandar email a santiagomondino2000@gmail.com ó juan.p.cozzi@hotmail.com 
 
+##Autores
+
+Cozzi, Juan Pablo y Mondino, Santiago.
 
 Le agradecemos por confiar en nosotros.

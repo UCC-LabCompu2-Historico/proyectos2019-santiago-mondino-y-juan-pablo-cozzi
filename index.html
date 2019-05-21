@@ -1,112 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+             crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+             crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+             crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EstiloPagWeb.css">
-    <meta charset="UTF-8">
-    <title>Triangle Calculator</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="EstiloPagWeb.css">
+     <meta charset="UTF-8">
+     <title>Triangle Calculator</title>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            Calculadora de Triángulos
-        </header>
-    </div>
-        <div class="row center">
-            <a id="Teoria" class="btn btn-secondary" href="Teoria.html" role="button">Teoria</a>
-        </div>
-        <div class="row center">
-            <a id="AutoEv" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Autoevaluacion</a>
-        </div>
-    </div>
 
-            <div>
-                <a id="Calcular" class="btn btn-info" href="Resultados_Calcu.html" role="button">Calcular</a>
-            </div>
-                <a id="Reiniciar" class="btn btn-info" href="index.html" role="button">Reiniciar</a>
-            </div>
-        </div>
-    </div>
+<section>
+     <div class="container">
+          <header>
+               Calculadora de Triángulos
+          </header>
+     </div>
+</section>
 
+<section>
+     <div class="float-right">
+          <div>
+               <a id="Teoria" class="btn btn-secondary" href="Teoria.html" role="button">Teoría</a>
+          </div>
+          <div>
+               <a id="AutoEv" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Autoevaluación</a>
+          </div>
+     </div>
+</section>
 
-    <div>
-        <table class="table table-responsive table-borderless">
-            <thead>
-                <tr>
+<section>
+     <div>
+          <table class="table table-responsive table-borderless">
+               <thead>
+               <tr>
                     <th class="cabecera" scope="col">Ángulos:</th>
-                    <th  class="cabecera" scope="col">Lados:</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>
-                    <div class="A">
-                        <div class="input-field inline">
-                          A=  <input id="Valor1A" type="number" placeholder="Valor">
-                              <input id="Valor2A" type="text" placeholder="Unidad">
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="a">
+                    <th class="cabecera" scope="col">Lados:</th>
+               </tr>
+               </thead>
+               <tbody>
+               <tr>
+                    <td>
+                         <div class="A">
+                              <div class="input-field inline">
+                                   A= <input id="Valor1A" type="number" placeholder="Valor">
+                                   <input id="Valor2A" type="text" placeholder="Unidad">
+                              </div>
+                         </div>
+                    </td>
+                    <td>
+                         <div class="a">
 
-                        <div class="input-field inline">
-                            a=<input id="Valor1a" type="number" placeholder="Valor">
-                              <input id="Valor2a" type="text" placeholder="Unidad">
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
+                              <div class="input-field inline">
+                                   a=<input id="Valor1a" type="number" placeholder="Valor">
+                                   <input id="Valor2a" type="text" placeholder="Unidad">
+                              </div>
+                         </div>
+                    </td>
+               </tr>
+               <tr>
 
-                <td>
-                    <div class="B">
+                    <td>
+                         <div class="B">
 
-                        <div class="input-field inline">
-                            B=<input id="Valor1B" type="number" placeholder="Valor">
-                              <input id="Valor2B" type="text" placeholder="Unidad">
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="b">
+                              <div class="input-field inline">
+                                   B=<input id="Valor1B" type="number" placeholder="Valor">
+                                   <input id="Valor2B" type="text" placeholder="Unidad">
+                              </div>
+                         </div>
+                    </td>
+                    <td>
+                         <div class="b">
 
-                        <div class="input-field inline">
-                        b=    <input id="Valor1b" type="number" placeholder="Valor">
-                            <input id="Valor2b" type="text" placeholder="Unidad">
-                    </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="C">
-                        <div class="input-field inline">
-                            C=<input id="Valor1C" type="number" placeholder="Valor">
-                              <input id="Valor2C" type="text" placeholder="Unidad">
-                    </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="c">
+                              <div class="input-field inline">
+                                   b= <input id="Valor1b" type="number" placeholder="Valor">
+                                   <input id="Valor2b" type="text" placeholder="Unidad">
+                              </div>
+                         </div>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <div class="C">
+                              <div class="input-field inline">
+                                   C=<input id="Valor1C" type="number" placeholder="Valor">
+                                   <input id="Valor2C" type="text" placeholder="Unidad">
+                              </div>
+                         </div>
+                    </td>
+                    <td>
+                         <div class="c">
 
-                        <div class="input-field inline">
-                        c=    <input id="Valor1c" type="number" placeholder="Valor">
-                              <input id="Valor2c" type="text" placeholder="Unidad">
-                    </div>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+                              <div class="input-field inline">
+                                   c= <input id="Valor1c" type="number" placeholder="Valor">
+                                   <input id="Valor2c" type="text" placeholder="Unidad">
+                              </div>
+                         </div>
+                    </td>
+               </tr>
+               </tbody>
+          </table>
+     </div>
+</section>
+
+<section>
+     <div class="float-right">
+          <a id="Calcular" class="btn btn-info" href="Resultados_Calcu.html" role="button">Calcular</a>
+          <a id="Reiniciar" class="btn btn-info" href="index.html" role="button">Reiniciar</a>
+     </div>
+</section>
 </body>
 </html>

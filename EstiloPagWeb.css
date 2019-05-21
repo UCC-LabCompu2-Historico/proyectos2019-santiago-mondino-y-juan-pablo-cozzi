@@ -1,101 +1,92 @@
-
-
 /*formato de todas las TAG's*/
 
 body {
     background-image: url("Imagenes/floor-tile.png");
     background-repeat: repeat;
 }
-.card{
-    border: transparent;
-    background-color: transparent;
-}
 
 
-header{
+header {
     margin-bottom: 100px;
     text-decoration: underline;
     font-size: calc(14px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
     text-align: center;
-    font-style:  italic;
+    font-style: italic;
     font-weight: bold;
     font-size: 15mm;
     color: brown;
 }
 
-h2{
+h2 {
     padding: 10px;
     font-size: 9mm;
     font-style: italic;
     text-decoration: underline;
 }
 
-h6{
+h6 {
     font-style: italic;
     color: olivedrab;
 }
+
 /*formato de todas las ID's*/
 
-#cartas{
+#cartas {
     max-width: 800px;
 }
 
 #Teoria {
-    background-color: rgba(255,167,0,0.62);
-    position: absolute;
+    background-color: rgba(255, 167, 0, 0.62);
     bottom: 450px;
     right: 90px;
     color: black;
 }
 
-#AutoEv{
-    background-color: rgba(255,167,0,0.62);
-    position: absolute;
+#AutoEv {
+    background-color: rgba(255, 167, 0, 0.62);
     bottom: 405px;
     right: 90px;
     color: black;
 }
 
-#Triangulo{
+#Triangulo {
     background-color: darkblue;
 }
 
-#Calcular{
-    position: absolute;
+#Calcular {
     bottom: 90px;
     right: 200px;
-    background-color: rgba(119,201,37,0.75) ;
+    background-color: rgba(119, 201, 37, 0.75);
 }
 
-#CalcularNew{
-    position: absolute;
+#CalcularNew {
     bottom: 90px;
     right: 200px;
-    background-color: rgba(119,201,37,0.75);
+    background-color: rgba(119, 201, 37, 0.75);
 
 }
 
-#Reiniciar{
-    position: absolute;
+#Reiniciar {
     bottom: 90px;
     right: 300px;
-    background-color: rgba(189,0,10,0.75);
+    background-color: rgba(189, 0, 10, 0.75);
 }
 
-#Trigo{
+#Trigo {
     position: absolute;
     bottom: 1900px;
     padding-right: 20px;
 }
 
-#Terminar{
+#Terminar {
     position: absolute;
     margin-bottom: 50px;
     right: 470px;
     bottom: -2952px;
     background-color: lightseagreen;
 }
-#Reset{
+
+#Reset {
     position: absolute;
     margin-bottom: 50px;
     bottom: -1400px;
@@ -105,28 +96,29 @@ h6{
 
 /*formato de todas las clases*/
 
-.separacion{
+.separacion {
     padding: 20px;
 }
 
-.cabecera{
+.cabecera {
     text-align: start;
     font-size: 9mm;
     font-style: italic;
 }
 
-.card-title{
+.card-title {
     text-decoration: underline;
     color: steelblue;
 }
 
-.autobuttons{
+.autobuttons {
     position: absolute;
     bottom: -1550px;
     right: 450px;
 }
 
-.btn-success{
+
+.btn-success {
     position: fixed;
     right: 15px;
     bottom: 3px;
@@ -137,7 +129,12 @@ h6{
     font-weight: bold;
 }
 
-.preguntas{
+.preguntas {
     font-size: 5.5mm;
     font-style: italic;
+}
+
+.card {
+    border: transparent;
+    background-color: transparent;
 }

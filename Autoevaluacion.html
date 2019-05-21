@@ -2,310 +2,419 @@
 <html lang="en">
 <head>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+             crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+             crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+             crossorigin="anonymous"></script>
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EstiloPagWeb.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="EstiloPagWeb.css">
 
-    <meta charset="UTF-8">
-    <title>AutoEvaluacion</title>
+     <meta charset="UTF-8">
+     <title>AutoEvaluacion</title>
 </head>
-<body>
-    <header>
-        Autoevaluación
-    </header>
-
-    <section>
-        <div>
-            <a id="AutoEv" class="btn btn-secondary" href="Teoria.html" role="button">Teoria</a>
-        </div>
-    </section>
-
-    <button id="Terminar" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Terminar
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">¡Atención!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>¿Desea enviar sus respuestas?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <a  class="btn btn-primary" href="Resultados_AutoEv.html">Enviar Respuestas</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div>
+     <section>
+          <header>
+               Autoevaluación
+          </header>
+     </section>
 
 
-    <div class="autobuttons">
-        <a id="Reset" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Reiniciar</a>
-    </div>
+     <section>
+          <div class="float-right">
+               <div>
+                    <a id="Teoria" class="btn btn-secondary" href="Teoria.html" role="button">Teoría</a>
+               </div>
+          </div>
+     </section>
 
-    <section>
-        <div class="VolverMenu">
-         <a class="btn btn-success" href="index.html" role="button">Volver al Menu</a>
-        </div>
-    </section>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 1:</h5>
-                        <p class="preguntas">¿Qué es un triángulo? </p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr1_op1" name="pregunta1" class="custom-control-input">
-                            <label class="custom-control-label" for="pr1_op1">Un paralelogramo cuyos cuatro lados forman ángulos rectos entre sí.</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr1_op2" name="pregunta1" class="custom-control-input">
-                            <label class="custom-control-label" for="pr1_op2">Un polígono de tres lados</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr1_op3" name="pregunta1" class="custom-control-input">
-                            <label class="custom-control-label" for="pr1_op3">Un cuadrilátero regular de cuatro lados iguales y cuatro ángulos interiores rectos. </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 2:</h5>
-                        <p class="preguntas">Indique cuál de las tres figuras corresponde a un triángulo equilátero y acutángulo:</p>
-                        <img src="Imagenes/imagen%207.png" class="card-img">
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr2_op1" name="pregunta2" class="custom-control-input">
-                            <label class="custom-control-label" for="pr2_op1">Figura 1</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr2_op2" name="pregunta2" class="custom-control-input">
-                            <label class="custom-control-label" for="pr2_op2">Figura 2</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr2_op3" name="pregunta2" class="custom-control-input">
-                            <label class="custom-control-label" for="pr2_op3">Figura 3</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 3:</h5>
-                        <p class="preguntas"> La suma de los ángulos interiores de un triángulo siempre es 270º.</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr3_op1" name="pregunta3" class="custom-control-input">
-                            <label class="custom-control-label" for="pr3_op1">Verdadero</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr3_op2" name="pregunta3" class="custom-control-input">
-                            <label class="custom-control-label" for="pr3_op2">Falso</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 4:</h5>
-                        <p class="preguntas"> Indicar si la siguiente afirmación es V o F “Cualquier lado de un triángulo siempre es menor a la suma de los otros dos lados, pero mayor que su diferencia”</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr4_op1" name="pregunta4" class="custom-control-input">
-                            <label class="custom-control-label" for="pr4_op1">Verdadero</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr4_op2" name="pregunta4" class="custom-control-input">
-                            <label class="custom-control-label" for="pr4_op2">Falso</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 5:</h5>
-                        <p class="preguntas">El teorema de Pitágoras es uno de los teoremas mas importantes dentro del algebra y geometría, y su uso es exclusivamente para los triángulos</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr5_op1" name="pregunta5" class="custom-control-input">
-                            <label class="custom-control-label" for="pr5_op1">Rectángulo</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr5_op2" name="pregunta5" class="custom-control-input">
-                            <label class="custom-control-label" for="pr5_op2">Obtusángulo</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr5_op3" name="pregunta5" class="custom-control-input">
-                            <label class="custom-control-label" for="pr5_op3">Acutángulo</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 6:</h5>
-                        <p class="preguntas">El teorema de Pitágoras dice que: "En un triángulo Acutángulo el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos"</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr6_op1" name="pregunta6" class="custom-control-input">
-                            <label class="custom-control-label" for="pr6_op1">Verdadero</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr6_op2" name="pregunta6" class="custom-control-input">
-                            <label class="custom-control-label" for="pr6_op2">Falso</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 7:</h5>
-                        <p class="preguntas">La trigonometría se ocupa, por tanto, de las funciones asociadas a los ángulos, denominadas funciones trigonométricas ¿Cuáles son estas?</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr7_op1" name="pregunta7" class="custom-control-input">
-                            <label class="custom-control-label" for="pr7_op1">Seno, Coseno y Tangente</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr7_op2" name="pregunta7" class="custom-control-input">
-                            <label class="custom-control-label" for="pr7_op2">Seno, Cosecante y Tangente</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr7_op3" name="pregunta7" class="custom-control-input">
-                            <label class="custom-control-label" for="pr7_op3">Secante, Cosecante y Cotangente</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr7_op4" name="pregunta7" class="custom-control-input">
-                            <label class="custom-control-label" for="pr7_op4">Ninguna de las anteriores</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 8:</h5>
-                        <p class="preguntas">Las razones trigonométricas recíprocas establecen que:</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr8_op1" name="pregunta8" class="custom-control-input">
-                            <label class="custom-control-label" for="pr8_op1">La secante es la razón entre la hipotenusa y el cateto opuesto, la cosecante es la razón entre la hipotenusa y el cateto adyacente, y la cotangente es la razón entre el cateto adyacente y el cateto opuesto</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr8_op2" name="pregunta8" class="custom-control-input">
-                            <label class="custom-control-label" for="pr8_op2">La secante es la razón entre la hipotenusa y el cateto adyacente, la cosecante es la razón entre la hipotenusa y el cateto opuesto , y la cotangente es la razón entre el cateto adyacente y el cateto opuesto</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr8_op3" name="pregunta8" class="custom-control-input">
-                            <label class="custom-control-label" for="pr8_op3">La secante es la razón entre la hipotenusa y el cateto adyacente, la cosecante es la razón entre la hipotenusa y el cateto opuesto , y la cotangente es la razón entre el cateto opuesto y el cateto adyacente</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 9:</h5>
-                        <p class="preguntas">El teorema del seno enuncia que: “la relación de proporcionalidad existente entre las longitudes de lados de un triángulo cualquiera con los cosenos de sus ángulos interiores opuestos”</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr9_op1" name="pregunta9" class="custom-control-input">
-                            <label class="custom-control-label" for="pr9_op1">Verdadero</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr9_op2" name="pregunta9" class="custom-control-input">
-                            <label class="custom-control-label" for="pr9_op2">Falso</label>
-                        </div>
+     <section>
+          <div class="VolverMenu">
+               <a class="btn btn-success" href="index.html" role="button">Volver al Menú</a>
+          </div>
+     </section>
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 1:</h5>
+                                   <p class="preguntas">¿Qué es un triángulo? </p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr1_op1" name="pregunta1" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr1_op1">Un paralelogramo cuyos cuatro
+                                             lados
+                                             forman
+                                             ángulos rectos entre sí.</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr1_op2" name="pregunta1" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr1_op2">Un polígono de tres
+                                             lados</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr1_op3" name="pregunta1" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr1_op3">Un cuadrilátero regular de
+                                             cuatro
+                                             lados
+                                             iguales y cuatro ángulos interiores rectos. </label>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+               </div>
+          </div>
+     </section>
 
-    <div class="separacion">
-        <div id="cartas" class="card border-light mb-3">
-            <div class="row no-gutters">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Pregunta 10:</h5>
-                        <p class="preguntas">La fórmula que representa al teorema del coseno es:</p>
-                        <p class="card-text">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr10_op1" name="pregunta10" class="custom-control-input">
-                            <label class="custom-control-label" for="pr10_op1">
-
-                                a<sup>2</sup>=b<sup>2</sup>+c<sup>2</sup>-2.b.c.cos(A)</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr10_op2" name="pregunta10" class="custom-control-input">
-                            <label class="custom-control-label" for="pr10_op2">
-                                <sup>a</sup>/<sub>(sen α)</sub>  = <sup>b</sup>/<sub>(sen β)</sub> = <sup>c</sup>/<sub>(sen γ)</sub>
-                            </label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="pr10_op3" name="pregunta10" class="custom-control-input">
-                            <label class="custom-control-label" for="pr10_op3">
-                                a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup></label>
-                        </div>
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 2:</h5>
+                                   <p class="preguntas">Indique cuál de las tres figuras corresponde a un triángulo
+                                        equilátero y
+                                        acutángulo:</p>
+                                   <img src="Imagenes/imagen%207.png" class="card-img">
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr2_op1" name="pregunta2" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr2_op1">Figura 1</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr2_op2" name="pregunta2" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr2_op2">Figura 2</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr2_op3" name="pregunta2" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr2_op3">Figura 3</label>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 3:</h5>
+                                   <p class="preguntas"> La suma de los ángulos interiores de un triángulo siempre es
+                                        270º.</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr3_op1" name="pregunta3" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr3_op1">Verdadero</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr3_op2" name="pregunta3" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr3_op2">Falso</label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 4:</h5>
+                                   <p class="preguntas"> Indicar si la siguiente afirmación es V o F “Cualquier lado de
+                                        un
+                                        triángulo
+                                        siempre es menor a la suma de los otros dos lados, pero mayor que su
+                                        diferencia”</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr4_op1" name="pregunta4" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr4_op1">Verdadero</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr4_op2" name="pregunta4" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr4_op2">Falso</label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 5:</h5>
+                                   <p class="preguntas">El teorema de Pitágoras es uno de los teoremas mas importantes
+                                        dentro
+                                        del
+                                        algebra y geometría, y su uso es exclusivamente para los triángulos</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr5_op1" name="pregunta5" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr5_op1">Rectángulo</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr5_op2" name="pregunta5" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr5_op2">Obtusángulo</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr5_op3" name="pregunta5" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr5_op3">Acutángulo</label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 6:</h5>
+                                   <p class="preguntas">El teorema de Pitágoras dice que: "En un triángulo Acutángulo el
+                                        cuadrado
+                                        de la
+                                        hipotenusa es igual a la suma de los cuadrados de los catetos"</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr6_op1" name="pregunta6" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr6_op1">Verdadero</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr6_op2" name="pregunta6" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr6_op2">Falso</label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 7:</h5>
+                                   <p class="preguntas">La trigonometría se ocupa, por tanto, de las funciones asociadas
+                                        a
+                                        los
+                                        ángulos,
+                                        denominadas funciones trigonométricas ¿Cuáles son estas?</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr7_op1" name="pregunta7" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr7_op1">Seno, Coseno y
+                                             Tangente</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr7_op2" name="pregunta7" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr7_op2">Seno, Cosecante y
+                                             Tangente</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr7_op3" name="pregunta7" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr7_op3">Secante, Cosecante y
+                                             Cotangente</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr7_op4" name="pregunta7" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr7_op4">Ninguna de las
+                                             anteriores</label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 8:</h5>
+                                   <p class="preguntas">Las razones trigonométricas recíprocas establecen que:</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr8_op1" name="pregunta8" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr8_op1">La secante es la razón entre
+                                             la
+                                             hipotenusa y
+                                             el cateto opuesto, la cosecante es la razón entre la hipotenusa y el cateto
+                                             adyacente, y la
+                                             cotangente es la razón entre el cateto adyacente y el cateto
+                                             opuesto</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr8_op2" name="pregunta8" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr8_op2">La secante es la razón entre
+                                             la
+                                             hipotenusa y
+                                             el cateto adyacente, la cosecante es la razón entre la hipotenusa y el
+                                             cateto
+                                             opuesto
+                                             , y la
+                                             cotangente es la razón entre el cateto adyacente y el cateto
+                                             opuesto</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr8_op3" name="pregunta8" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr8_op3">La secante es la razón entre
+                                             la
+                                             hipotenusa y
+                                             el cateto adyacente, la cosecante es la razón entre la hipotenusa y el
+                                             cateto
+                                             opuesto
+                                             , y la
+                                             cotangente es la razón entre el cateto opuesto y el cateto
+                                             adyacente</label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 9:</h5>
+                                   <p class="preguntas">El teorema del seno enuncia que: “la relación de
+                                        proporcionalidad
+                                        existente
+                                        entre las longitudes de lados de un triángulo cualquiera con los cosenos de sus
+                                        ángulos
+                                        interiores opuestos”</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr9_op1" name="pregunta9" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr9_op1">Verdadero</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr9_op2" name="pregunta9" class="custom-control-input">
+                                        <label class="custom-control-label" for="pr9_op2">Falso</label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section>
+          <div class="separacion">
+               <div id="cartas" class="card border-light mb-3">
+                    <div class="row no-gutters">
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title">Pregunta 10:</h5>
+                                   <p class="preguntas">La fórmula que representa al teorema del coseno es:</p>
+                                   <p class="card-text">
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr10_op1" name="pregunta10"
+                                               class="custom-control-input">
+                                        <label class="custom-control-label" for="pr10_op1">
+
+                                             a<sup>2</sup>=b<sup>2</sup>+c<sup>2</sup>-2.b.c.cos(A)</label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr10_op2" name="pregunta10"
+                                               class="custom-control-input">
+                                        <label class="custom-control-label" for="pr10_op2">
+                                             <sup>a</sup>/<sub>(sen α)</sub> = <sup>b</sup>/<sub>(sen β)</sub> =
+                                             <sup>c</sup>/<sub>(sen
+                                             γ)</sub>
+                                        </label>
+                                   </div>
+                                   <div class="custom-control custom-radio">
+                                        <input type="radio" id="pr10_op3" name="pregunta10"
+                                               class="custom-control-input">
+                                        <label class="custom-control-label" for="pr10_op3">
+                                             a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup></label>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+     <section>
+          <div class="boton_terminar">
+               <button id="Terminar" type="button" class="btn btn-primary" data-toggle="modal"
+                       data-target="#exampleModal">
+                    Terminar
+               </button>
+          </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                         <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">¡Atención!</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                              </button>
+                         </div>
+                         <div class="modal-body">
+                              <p>¿Desea enviar sus respuestas?</p>
+                         </div>
+                         <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar
+                              </button>
+                              <a class="btn btn-primary" href="Resultados_AutoEv.html">Enviar Respuestas</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section>
+          <div class="autobuttons">
+               <a id="Reset" class="btn btn-secondary" href="Autoevaluacion.html" role="button">Reiniciar</a>
+          </div>
+     </section>
+</div>
+
 </body>
 </html>

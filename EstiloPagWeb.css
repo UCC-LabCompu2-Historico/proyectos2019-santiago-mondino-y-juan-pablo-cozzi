@@ -79,18 +79,12 @@ h6 {
 }
 
 #Terminar {
-    position: absolute;
     margin-bottom: 50px;
-    right: 470px;
-    bottom: -2952px;
     background-color: lightseagreen;
 }
 
 #Reset {
-    position: absolute;
     margin-bottom: 50px;
-    bottom: -1400px;
-    right: 250px;
     background-color: #e2553f;
 }
 
@@ -111,11 +105,7 @@ h6 {
     color: steelblue;
 }
 
-.autobuttons {
-    position: absolute;
-    bottom: -1550px;
-    right: 450px;
-}
+
 
 
 .btn-success {

@@ -23,13 +23,11 @@ h2 {
     font-style: italic;
     text-decoration: underline;
 }
-
-h4 {
+h4{
     font-style: italic;
     font-size: 5.5mm;
-    text-decoration: underline;
+    text-decoration:  underline;
 }
-
 h6 {
     font-style: italic;
     color: olivedrab;
@@ -92,7 +90,7 @@ h6 {
     background-color: #e2553f;
 }
 
-#myCanvas {
+#myCanvas{
     margin-bottom: 0px;
     border: 1px solid black;
     width: 85%;
@@ -118,6 +116,8 @@ h6 {
 }
 
 
+
+
 .btn-success {
     position: fixed;
     right: 15px;
@@ -140,6 +140,6 @@ h6 {
     background-color: transparent;
 }
 
-.tabla {
+.tabla{
     margin-top: 0px;
 }

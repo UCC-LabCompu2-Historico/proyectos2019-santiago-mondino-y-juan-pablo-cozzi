@@ -35,10 +35,6 @@ h6 {
 
 /*formato de todas las ID's*/
 
-#cartas {
-    max-width: 800px;
-}
-
 #Teoria {
     background-color: rgba(255, 167, 0, 0.62);
     bottom: 450px;
@@ -98,6 +94,8 @@ h6 {
     background-color: whitesmoke;
 }
 
+
+
 /*formato de todas las clases*/
 
 .separacion {
@@ -142,4 +140,8 @@ h6 {
 
 .tabla{
     margin-top: 0px;
+}
+
+.cartas {
+    max-width: 800px;
 }

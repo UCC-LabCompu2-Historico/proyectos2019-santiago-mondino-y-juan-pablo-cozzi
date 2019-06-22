@@ -150,7 +150,25 @@ function Calcular(){
     }
 
      if (Ladoa=='' && Ladob=='' && Ladoc==''){
-        alert("Por Favor, ingrese al menos un lado del triangulo");
+        alert("Por Favor, ingrese correctamente los datos");
+         Reiniciar();
+         Limpiar();
+     }
+    if (Ladob=='' && Ladoc==''&& Anguloα=='' && Anguloβ==''){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+    }
+    if (Ladoa=='' && Ladob==''&& Anguloα=='' && Anguloβ==''){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+    }
+    if (Ladoa=='' && Ladoc==''&& Anguloα=='' && Anguloβ==''){
+        alert("Por Favor, ingrese correctamente los datos");
+
+        Reiniciar();
+        Limpiar();
     }
 }
 

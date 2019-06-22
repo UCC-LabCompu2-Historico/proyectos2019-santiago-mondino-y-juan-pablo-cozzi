@@ -148,7 +148,6 @@ function Calcular(){
         document.getElementById("Perimetro").value = PerimetroT;
 
     }
-
      if (Ladoa=='' && Ladob=='' && Ladoc==''){
         alert("Por Favor, ingrese correctamente los datos");
          Reiniciar();

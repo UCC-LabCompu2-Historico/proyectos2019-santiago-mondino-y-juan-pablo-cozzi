@@ -10,6 +10,8 @@ y las fórmulas que se están utilizando.
 Por último se tiene la posibilidad de hacer una autoevaluación sobre la teoría aprendido,
 donde el programa va decirte cual fue el resultado y en que preguntas fallaste.
 
+URL del Proyecto: [https://ucc-labcompu2.github.io/proyectos2019-santiago-mondino-y-juan-pablo-cozzi/index.html]
+
 ## Como se usa
 
 Para utilizar esta aplicacion es necesario ejecutar el html index o, una vez puesto en web, 

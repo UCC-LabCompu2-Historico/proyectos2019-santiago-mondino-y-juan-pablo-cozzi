@@ -1,3 +1,4 @@
+var contador = 0;
 
 /**
  * Esta funcion lo que hace es realizar el calculo de los datos faltantes del triangulo rectangulo que se desea obtener.
@@ -7,152 +8,160 @@
 
 function Calcular(){
 
-    var Ladoa = document.getElementById("Valor1a").value;
-    var Ladob = document.getElementById("Valor1b").value;
-    var Ladoc = document.getElementById("Valor1c").value;
-    var Anguloα = document.getElementById("Valor1A").value;
-    var Anguloβ = document.getElementById("Valor1B").value;
-    var Anguloγ = document.getElementById("Valor1C").value;
+    var Ladoa = document.getElementById("LadoA").value;
+    var Ladob = document.getElementById("LadoB").value;
+    var Ladoc = document.getElementById("LadoC").value;
+    var Anguloα = document.getElementById("AnguloAlfa").value;
+    var Anguloβ = document.getElementById("AnguloBeta").value;
+    var Anguloγ = document.getElementById("AnguloGamma").value;
     var AreaTriang = document.getElementById("Area").value;
     var PerimTriang = document.getElementById("Perimetro").value;
 
+    contador= contador + 1;
 
 
-// FALTAN AGREGAR UN PAR DE COMBINACIONES PARA CUANDO TENEMOS DOS LADOS Y UN SOlo ANGULO.
+
 
     if (Anguloβ == '' && Ladob=='' && Ladoc==''){
-        var angbeta = (Anguloγ-Anguloα);
-        document.getElementById("Valor1B").value = angbeta;
+        var angbeta = Math.round(Anguloγ-Anguloα);
+        document.getElementById("AnguloBeta").value = angbeta;
         var ang_convertido = (Anguloα*Math.PI)/(180);
-        var catetoC = ((Ladoa)/(Math.sin(ang_convertido)));
-        document.getElementById("Valor1c").value = catetoC;
-        var catetoB = ((Ladoa)/Math.tan(ang_convertido));
-        document.getElementById("Valor1b").value = catetoB;
+        var catetoC = Math.round((Ladoa)/(Math.sin(ang_convertido)));
+        document.getElementById("LadoC").value = catetoC;
+        var catetoB = Math.round((Ladoa)/Math.tan(ang_convertido));
+        document.getElementById("LadoB").value = catetoB;
         var Area = ((catetoB*Ladoa)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(Ladoa) + (catetoB + catetoC) ;
+        var PerimetroT = Math.round(parseInt(Ladoa) + (catetoB + catetoC)) ;
         document.getElementById("Perimetro").value = PerimetroT;
 
     }
     else if(Anguloβ == '' && Ladoa=='' && Ladoc==''){
-        var angbeta = (Anguloγ-Anguloα);
-        document.getElementById("Valor1B").value = angbeta;
+        var angbeta = Math.round(Anguloγ-Anguloα);
+        document.getElementById("AanguloBeta").value = angbeta;
         var ang_convertido = (Anguloα*Math.PI)/(180); //angulo alfa convertido a radianes
-        var catetoC = ((Ladob)/(Math.cos(ang_convertido)));
-        document.getElementById("Valor1c").value = catetoC;
-        var catetoA = ((Ladob)*Math.tan(ang_convertido));
-        document.getElementById("Valor1a").value = catetoA;
-        var Area = ((Ladob*catetoA)/2);
+        var catetoC = Math.round((Ladob)/(Math.cos(ang_convertido)));
+        document.getElementById("LadoC").value = catetoC;
+        var catetoA = Math.round((Ladob)*Math.tan(ang_convertido));
+        document.getElementById("LadoA").value = catetoA;
+        var Area = Math.round((Ladob*catetoA)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(Ladob) + (catetoA + catetoC) ;
+        var PerimetroT = Math.round(parseInt(Ladob) + (catetoA + catetoC)) ;
         document.getElementById("Perimetro").value = PerimetroT;
     }
     else if(Anguloβ == '' && Ladoa=='' && Ladob==''){
-        var angbeta = (Anguloγ-Anguloα);
-        document.getElementById("Valor1B").value = angbeta;
+        var angbeta = Math.round((Anguloγ-Anguloα));
+        document.getElementById("AnguloBeta").value = angbeta;
         var ang_convertido = (Anguloα*Math.PI)/(180); //angulo alfa convertido a radianes
-        var catetoB = ((Ladoc)*(Math.cos(ang_convertido)));
-        document.getElementById("Valor1b").value = catetoB;
-        var catetoA = ((Ladoc)*Math.sin(ang_convertido));
-        document.getElementById("Valor1a").value = catetoA;
-        var Area = ((catetoB*catetoA)/2);
+        var catetoB = Math.round((Ladoc)*(Math.cos(ang_convertido)));
+        document.getElementById("LadoB").value = catetoB;
+        var catetoA = Math.round((Ladoc)*Math.sin(ang_convertido));
+        document.getElementById("LadoA").value = catetoA;
+        var Area = Math.round((catetoB*catetoA)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(Ladoc) + (catetoA + catetoB) ;
+        var PerimetroT = Math.round(parseInt(Ladoc) + (catetoA + catetoB)) ;
         document.getElementById("Perimetro").value = PerimetroT;
     }
     else if (Anguloα == '' && Ladob=='' && Ladoc==''){
-        var angalfa = (Anguloγ-Anguloβ);
-        document.getElementById("Valor1A").value = angalfa;
+        var angalfa = Math.round(Anguloγ-Anguloβ);
+        document.getElementById("AnguloAlfa").value = angalfa;
         var ang_convertido = (Anguloβ*Math.PI)/(180); //angulo alfa convertido a radianes
-        var catetoB = ((Ladoa)*(Math.tan(ang_convertido)));
-        document.getElementById("Valor1b").value = catetoB;
-        var catetoC = ((Ladoa)/Math.cos(ang_convertido));
-        document.getElementById("Valor1c").value = catetoC;
-        var Area = ((catetoB*Ladoa)/2);
+        var catetoB = Math.round((Ladoa)*(Math.tan(ang_convertido)));
+        document.getElementById("LadoB").value = catetoB;
+        var catetoC = Math.round((Ladoa)/Math.cos(ang_convertido));
+        document.getElementById("LadoC").value = catetoC;
+        var Area = Math.round((catetoB*Ladoa)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(Ladoa) + (catetoC + catetoB) ;
+        var PerimetroT = Math.round(parseInt(Ladoa) + (catetoC + catetoB)) ;
         document.getElementById("Perimetro").value = PerimetroT;
     }
     else if (Anguloα == '' && Ladoa=='' && Ladoc==''){
-        var angalfa = (Anguloγ-Anguloβ);
-        document.getElementById("Valor1A").value = angalfa;
+        var angalfa = Math.round(Anguloγ-Anguloβ);
+        document.getElementById("AnguloAlfa").value = angalfa;
         var ang_convertido = (Anguloβ*Math.PI)/(180); //angulo alfa convertido a radianes
-        var catetoA = ((Ladob)/(Math.tan(ang_convertido)));
-        document.getElementById("Valor1a").value = catetoA;
-        var catetoC = ((Ladob)/Math.sin(ang_convertido));
-        document.getElementById("Valor1c").value = catetoC;
-        var Area = ((catetoA*Ladob)/2);
+        var catetoA = Math.round((Ladob)/(Math.tan(ang_convertido)));
+        document.getElementById("LadoA").value = catetoA;
+        var catetoC = Math.round((Ladob)/Math.sin(ang_convertido));
+        document.getElementById("LadoC").value = catetoC;
+        var Area = Math.round((catetoA*Ladob)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(Ladob) + (catetoC + catetoA) ;
+        var PerimetroT = Math.round(parseInt(Ladob) + (catetoC + catetoA)) ;
         document.getElementById("Perimetro").value = PerimetroT;
     }
     else if (Anguloα == '' && Ladoa=='' && Ladob==''){
-        var angalfa = (Anguloγ-Anguloβ);
-        document.getElementById("Valor1A").value = angalfa;
+        var angalfa = Math.round(Anguloγ-Anguloβ);
+        document.getElementById("AnguloAlfa").value = angalfa;
         var ang_convertido = (Anguloβ*Math.PI)/(180); //angulo alfa convertido a radianes
-        var catetoA = ((Ladoc)*(Math.cos(ang_convertido)));
-        document.getElementById("Valor1a").value = catetoA;
-        var catetoB = ((Ladoc)*Math.sin(ang_convertido));
-        document.getElementById("Valor1b").value = catetoB;
-        var Area = ((catetoB*catetoA)/2);
+        var catetoA = Math.round((Ladoc)*(Math.cos(ang_convertido)));
+        document.getElementById("LAdoA").value = catetoA;
+        var catetoB = Math.round((Ladoc)*Math.sin(ang_convertido));
+        document.getElementById("LadoB").value = catetoB;
+        var Area = Math.round((catetoB*catetoA)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(Ladoc) + (catetoB + catetoA) ;
+        var PerimetroT = Math.round(parseInt(Ladoc) + (catetoB + catetoA)) ;
         document.getElementById("Perimetro").value = PerimetroT;
     }
     else if(Ladoa==''){
-        var catetoB = parseInt(Ladob);
-        var catetoC = parseInt(Ladoc);
-        var catetoA= Math.sqrt((Ladoc*Ladoc)-(Ladob*Ladob));
-        document.getElementById("Valor1a").value = catetoA;
-        var angalfa= Math.atan(catetoA/Ladob);
-        var ang_convertido = (angalfa*180)/(Math.PI);
-        document.getElementById("Valor1A").value = ang_convertido;
-        var angbeta = (Anguloγ-ang_convertido);
-        document.getElementById("Valor1B").value = angbeta;
+        var catetoB = Math.round(parseInt(Ladob));
+        var catetoC = Math.round(parseInt(Ladoc));
+        var catetoA= Math.round(Math.sqrt((Ladoc*Ladoc)-(Ladob*Ladob)));
+        document.getElementById("LadoA").value = catetoA;
+        var angalfa= Math.round(Math.atan(catetoA/Ladob));
+        var ang_convertido = Math.round(angalfa*180)/(Math.PI);
+        document.getElementById("AnguloAlfa").value = ang_convertido;
+        var angbeta = Math.round(Anguloγ-ang_convertido);
+        document.getElementById("AnguloBeta").value = angbeta;
 
-        var Area = ((Ladob*catetoA)/2);
+        var Area = Math.round((Ladob*catetoA)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(catetoB) + (catetoC + catetoA) ;
+        var PerimetroT = Math.round(parseInt(catetoB) + (catetoC + catetoA));
         document.getElementById("Perimetro").value = PerimetroT;
 
     }
     else if(Ladob==''){
-        var catetoA = parseInt(Ladoa);
-        var catetoC = parseInt(Ladoc);
-        var catetoB= Math.sqrt((Ladoc*Ladoc)-(Ladoa*Ladoa));
-        document.getElementById("Valor1b").value = catetoB;
-        var angalfa= Math.atan(Ladoa/catetoB);
-        var ang_convertido = (angalfa*180)/(Math.PI);
-        document.getElementById("Valor1A").value = ang_convertido;
-        var angbeta = (Anguloγ-ang_convertido);
-        document.getElementById("Valor1B").value = angbeta;
-        var Area = ((Ladoa*catetoB)/2);
+        var catetoA = Math.round(parseInt(Ladoa));
+        var catetoC = Math.round(parseInt(Ladoc));
+        var catetoB= Math.round(Math.sqrt((Ladoc*Ladoc)-(Ladoa*Ladoa)));
+        document.getElementById("LadoB").value = catetoB;
+        var angalfa= Math.round(Math.atan(Ladoa/catetoB));
+        var ang_convertido = Math.round(angalfa*180)/(Math.PI);
+        document.getElementById("AanguloAlfa").value = ang_convertido;
+        var angbeta = Math.round(Anguloγ-ang_convertido);
+        document.getElementById("AnguloBeta").value = angbeta;
+        var Area = Math.round((Ladoa*catetoB)/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(catetoB) + (catetoC + catetoA) ;
+        var PerimetroT = Math.round(parseInt(catetoB) + (catetoC + catetoA)) ;
         document.getElementById("Perimetro").value = PerimetroT;
 
     }
     else if(Ladoc=='') {
-        var catetoA = parseInt(Ladoa);
-        var catetoB = parseInt(Ladob);
-        var catetoC = Math.sqrt((Ladoa * Ladoa) + (Ladob * Ladob));
-        document.getElementById("Valor1c").value = catetoC;
-        var angalfa = Math.atan(Ladoa / Ladob);
-        var ang_convertido = (angalfa * 180) / (Math.PI);
-        document.getElementById("Valor1A").value = ang_convertido;
-        var angbeta = (Anguloγ - ang_convertido);
-        document.getElementById("Valor1B").value = angbeta;
-        var Area = ((Ladob*Ladoa)/2);
+        var catetoA = Math.round(parseInt(Ladoa));
+        var catetoB = Math.round(parseInt(Ladob));
+        var catetoC = Math.round(Math.sqrt((Ladoa * Ladoa) + (Ladob * Ladob)));
+        document.getElementById("LadoC").value = catetoC;
+        var angalfa = Math.round(Math.atan(Ladoa / Ladob));
+        var ang_convertido = Math.round(angalfa * 180) / (Math.PI);
+        document.getElementById("AnguloAlfa").value = ang_convertido;
+        var angbeta = Math.round(Anguloγ - ang_convertido);
+        document.getElementById("AnguloBeta").value = angbeta;
+        var Area = Math.round(Ladob*Ladoa/2);
         document.getElementById("Area").value = Area;
-        var PerimetroT = parseInt(catetoB) + (catetoC + catetoA) ;
+        var PerimetroT = Math.round(catetoB) + (catetoC + catetoA);
         document.getElementById("Perimetro").value = PerimetroT;
 
     }
-     if (Ladoa=='' && Ladob=='' && Ladoc==''){
+    if (Ladoa=='' && Ladob=='' && Ladoc==''){
         alert("Por Favor, ingrese correctamente los datos");
-         Reiniciar();
-         Limpiar();
-     }
+        Reiniciar();
+        Limpiar();
+
+    }
+    if (Ladoa== ' ' && Ladob=='' && Ladoc=='' && Anguloα=='' && Anguloβ==''){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+
+    }
     if (Ladob=='' && Ladoc==''&& Anguloα=='' && Anguloβ==''){
         alert("Por Favor, ingrese correctamente los datos");
         Reiniciar();
@@ -165,10 +174,42 @@ function Calcular(){
     }
     if (Ladoa=='' && Ladoc==''&& Anguloα=='' && Anguloβ==''){
         alert("Por Favor, ingrese correctamente los datos");
-
         Reiniciar();
         Limpiar();
     }
+
+    if ((isNaN(Ladoa))== true){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+    }
+    if ((isNaN(Ladob))== true){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+    }
+
+    if ((isNaN(Ladoc))== true){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+    }
+    if ((isNaN(Anguloα))== true){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+    }
+    if ((isNaN(Anguloβ))== true){
+        alert("Por Favor, ingrese correctamente los datos");
+        Reiniciar();
+        Limpiar();
+    }
+
+    if (contador > 1){
+        alert("Si desea volver a calcular, presione REINICIAR");
+    }
+
+
 }
 
 
@@ -179,32 +220,47 @@ function Calcular(){
  */
 function dibujar() {
 
-    var canvas = document.getElementById("myCanvas");
-    var context = canvas.getContext("2d");
-    var base = parseInt(document.getElementById("Valor1b").value);
-    var altura = parseInt(document.getElementById("Valor1a").value);
+    var Ladoa = document.getElementById("LadoA").value;
+    var Ladob = document.getElementById("LadoB").value;
+    var Ladoc = document.getElementById("LadoC").value;
+    var Anguloα = document.getElementById("AnguloAlfa").value;
+    var Anguloβ = document.getElementById("AnguloBeta").value;
+    var Anguloγ = document.getElementById("AnguloGamma").value;
+    var AreaTriang = document.getElementById("Area").value;
+    var PerimTriang = document.getElementById("Perimetro").value;
 
-    var Xmedia= canvas.width/2;
-    var Ymedia = canvas.height/2;
-    //context.scale(0.8,0.8);
 
-    context.beginPath();
-    context.moveTo(Xmedia, Ymedia);
-    context.lineTo(base, Ymedia);
-    context.lineTo(base, altura);
-    context.closePath();
 
-    //Contorno
-    context.lineWidth = 2;
-    context.strokeStyle = '#000000';
-    context.stroke();
+    if (contador == 1) {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        var base = document.getElementById("LadoB").value;
+        var altura = document.getElementById("LadoA").value;
 
-    //relleno
-    context.fillStyle = "#FFCC00";
-    context.fill();
+        var Xmedia = canvas.width / 2;
+        var Ymedia = canvas.height / 2;
+        //context.scale(0.8,0.8);
 
+        context.beginPath();
+        context.moveTo(Xmedia, Ymedia);
+        context.lineTo(base, Ymedia);
+        context.lineTo(base, altura);
+        context.closePath();
+
+        //Contorno
+        context.lineWidth = 2;
+        context.strokeStyle = '#000000';
+        context.stroke();
+
+        //relleno
+        context.fillStyle = "#FFCC00";
+        context.fill();
+
+    }
 
 }
+
+
 /**
  * La siguiente funcion lo que hace es reiniciar todos los inputs a su valor original, con el objetivo de que el usuario
  * realice nuevamente un calculo.
@@ -214,13 +270,15 @@ function dibujar() {
 function Reiniciar() {
 
 
-    document.getElementById("Valor1B").value = null;
-    document.getElementById("Valor1A").value = null;
-    document.getElementById("Valor1a").value = null;
-    document.getElementById("Valor1c").value = null;
-    document.getElementById("Valor1b").value = null;
+    document.getElementById("AnguloBeta").value = null;
+    document.getElementById("AnguloAlfa").value = null;
+    document.getElementById("LadoA").value = null;
+    document.getElementById("LadoC").value = null;
+    document.getElementById("LadoB").value = null;
     document.getElementById("Area").value = null;
     document.getElementById("Perimetro").value = null;
+
+    contador=0;
 }
 
 /**
@@ -232,7 +290,7 @@ function Limpiar() {
     var canvas = document.getElementById("myCanvas");
     var context = canvas.getContext("2d");
 
-    context.clearRect (0, 0, canvas.width, canvas.height);
+    context.clearRect(0, 0, canvas.width, canvas.height);
 
 }
 

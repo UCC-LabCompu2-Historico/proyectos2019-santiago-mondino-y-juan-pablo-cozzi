@@ -218,46 +218,71 @@ function Calcular(){
  * El dibujo se hace sobre un canvas
  * @method dibujar
  */
+
 function dibujar() {
-
-    var Ladoa = document.getElementById("LadoA").value;
-    var Ladob = document.getElementById("LadoB").value;
-    var Ladoc = document.getElementById("LadoC").value;
-    var Anguloα = document.getElementById("AnguloAlfa").value;
-    var Anguloβ = document.getElementById("AnguloBeta").value;
-    var Anguloγ = document.getElementById("AnguloGamma").value;
-    var AreaTriang = document.getElementById("Area").value;
-    var PerimTriang = document.getElementById("Perimetro").value;
+    animar();
+}
 
 
+/**
+ * La funcion aqui abajo realiza la animacion del triangulo correspondiente a los datos ingresados/calculados.
+ * El dibujo animado se hace sobre un canvas
+ * @method dibujar
+ */
+var chequeoB=0;
+var chequeoA=0;
+var mov=0;
+var mov1=0;
+
+function animar() {
 
     if (contador == 1) {
+
         var canvas = document.getElementById("myCanvas");
         var context = canvas.getContext("2d");
         var base = document.getElementById("LadoB").value;
         var altura = document.getElementById("LadoA").value;
+        var flag = 1;
 
-        var Xmedia = canvas.width / 2;
-        var Ymedia = canvas.height / 2;
-        //context.scale(0.8,0.8);
+        var Xmedia = ((canvas.width / 2)-120);
+        var Ymedia = ((canvas.height / 2)+40);
+
+        var animacion = requestAnimationFrame(animar);
 
         context.beginPath();
         context.moveTo(Xmedia, Ymedia);
-        context.lineTo(base, Ymedia);
-        context.lineTo(base, altura);
-        context.closePath();
+        mov = Xmedia + chequeoB;
+        mov1 = Ymedia - chequeoA;
+
+        if (chequeoB != base) {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            context.lineTo(mov, Ymedia);
+            chequeoB += (1 / 8);
+            console.log(chequeoB);
+
+        }
+
+        if (chequeoA != altura && chequeoB == base) {
+            context.moveTo(mov, Ymedia);
+            context.lineTo(mov, mov1);
+            chequeoA += 1 / 8;
+            console.log(chequeoA);
+        }
+
+        if (chequeoA == altura && chequeoB == base) {
+            context.moveTo(mov, mov1);
+            context.lineTo(Xmedia, Ymedia);
+            chequeoA += 1 / 8;
+            cancelAnimationFrame(animacion);
+        }
 
         //Contorno
         context.lineWidth = 2;
         context.strokeStyle = '#000000';
         context.stroke();
 
-        //relleno
-        context.fillStyle = "#FFCC00";
-        context.fill();
-
     }
-
 }
 
 
@@ -279,6 +304,11 @@ function Reiniciar() {
     document.getElementById("Perimetro").value = null;
 
     contador=0;
+
+
+    chequeoB=0;
+    chequeoA=0;
+    mov=0;
 }
 
 /**

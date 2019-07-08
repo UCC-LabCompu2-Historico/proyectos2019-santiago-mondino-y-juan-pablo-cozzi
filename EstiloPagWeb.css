@@ -1,7 +1,7 @@
 /*formato de todas las TAG's*/
 
 body {
-    background-image: url("Imagenes/floor-tile.png");
+    background-image: url("Imagenes/Fondo-Web-b.jpg");
     background-repeat: repeat;
 }
 
@@ -88,8 +88,8 @@ h6 {
 #myCanvas{
     margin-bottom: 0;
     border: 1px solid black;
-    width: 80%;
-    height: 50%;
+    width: 50em;
+    height: 30em;
     background-color: whitesmoke;
 }
 

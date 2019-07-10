@@ -65,7 +65,7 @@ function Calcular(){
         document.getElementById("AnguloBeta").value = angbeta;
         var ang_convertido = (Anguloα*Math.PI)/(180); //angulo alfa convertido a radianes
         var catetoB = (Ladoc)*(Math.cos(ang_convertido));
-        catetoB = Math.round(catetoB*100)/100; 
+        catetoB = Math.round(catetoB*100)/100;
         document.getElementById("LadoB").value = catetoB;
         var catetoA = (Ladoc)*Math.sin(ang_convertido);
         catetoA = Math.round(catetoA*100)/100;
@@ -272,6 +272,12 @@ function Calcular(){
         return false;
     }
 
+    if (Anguloα>90 || Anguloβ>90){
+        alert("Por Favor, ingrese correctamente los angulos");
+        Reiniciar();
+        Limpiar();
+        return false;
+    }
     if (contador > 1){
         alert("Si desea volver a calcular, presione REINICIAR");
         return  false;
